@@ -1,13 +1,14 @@
 
 
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-1 no. answer: 
-They all are DOM mathods and they are applied to select element.
-(a) getElementById is used for a single element and selected by its id.it should be unique.Returns a elements itself and returns null if not found.
+1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?  
 
-(b) getElementByClassName is used for selecting all elements with a given class and returns a Htmlcollection with matched class.Htmlcollection is an Array-like, but not an Array.It is live.if Dom change,it updsates automatically.
+1 no. answer:   
+They all are DOM mathods and they are applied to select element.  
+(a) getElementById is used for a single element and selected by its id.it should be unique.Returns a elements itself and returns null if not found.  
 
-(c) querySelector is used for select first element that match a css selector.Returns a elements itself and returns null if not found.
+(b) getElementByClassName is used for selecting all elements with a given class and returns a Htmlcollection with matched class.Htmlcollection is an Array-like, but not an Array.It is live.if Dom change,it updsates automatically.  
+
+(c) querySelector is used for select first element that match a css selector.Returns a elements itself and returns null if not found.  
 
 (d) querySelectorAll is used for select all elements that match a CSS selector and returns a Nodelist.it is Array-like,but not Array.
 
@@ -31,13 +32,8 @@ thats all of how i create and insert a new element into the DOM.
 3 NO. Answer :  Events bubbling is a way event propogates in the DOM.When events happen in the element (like a 'click'),it bubbles-up from the target elements to its ancestors in the DOM tree.
 In other words : events starts at the inner most element and move outward to the parent, then the grandparent and so on.
 
-example: 
+example: i took a section and its child is a div and div's child is a h2.
 
-<section>
-    <div>
-        <h2>This is a title</h2>
-    </div>
-</section>
 
 If you click h2 ,that mean you also click on div and section.so event happend on target but bubbling to the parent, grandparent, and so on.
 
