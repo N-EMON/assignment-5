@@ -49,7 +49,6 @@ for(const callBtn of callBtns){
 }
 
 
-
 // For Copy Button 
 const copybtns = document.getElementsByClassName('copy-btn');
 for(const copybtn of copybtns){ 
@@ -63,7 +62,6 @@ for(const copybtn of copybtns){
         const copycounted = Number(document.getElementById('copy-count').innerText);
         const copycountedTotal = copycounted + 1;
         document.getElementById('copy-count').innerText = copycountedTotal;
-
     })
 
 
